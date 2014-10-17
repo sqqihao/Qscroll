@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.scroll_parent{
+	position: absolute;
+	/*配置的时候一定要配置宽度和高度*/
+	height: 400px;
+	width: 400px;
+	left:100px;
+	top:100px;
+}
+.scroll_parent .scroll_content_wrap{
+	margin-right: 30px;
+	height: 100%;
+	background: #ECF0F1;
+	/*设置成相对定位，这样就不会脱离文档流，高度为100%和margin-right才有效*/
+	position: relative;
+	overflow: hidden;
+}
+.scroll_parent .scroll_content_wrap .scroll_content{
+	position: absolute;
+	word-wrap: break-word;
+	word-break: break-all;
+	width: 100%;
+}
+.scroll_parent .scroll_bar{
+	/*使用绝对定位到右上角*/
+	position: absolute;
+	right: 0;top: 0;
+	width: 30px;
+	background: #BDC3C7;
+	height: 100%;
+}
+.scroll_parent .scroll_bar .scroll_btn{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #95A5A6;
+	cursor:pointer;
+}
+
+.scroll_parent0{
+	left:700px;
+}
